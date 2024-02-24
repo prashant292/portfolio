@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Prashant Singh,Portfolio, Prashant Portfolio, Prashant Thakur "
+    />
+    <meta
+      name="description"
+      content="This is my portfolio website created using SCSS & Javascript and deployed on Vercel"
+    />
+    <meta name="author" content="Prashant Singh" />
+    <meta name="contact" content="prashantpratap396@gmail.com" />
+    <meta name="robots" content="index,follow" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-------------- Open Graph Meta Tags -------------->
+    <meta property="og:title" content="Portfolio Website" />
+    <meta property="og:site_name" content="Prashant Singh" />
+    <meta property="og:url" content="https://prashantsingh.vercel.app" />
+    <meta
+      property="og:description"
+      content="It is a portfolio website created using scss & Javascript and deployed on Vercel"
+    />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="/meta/front.png" />
+
+    <!--------------- Twitter Card Meta Tags  -------------->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prashant Singh" />
+    <meta
+      property="twitter:description"
+      content="It is a portfolio website created using scss & Javascript and deployed on Vercel"
+    />
+    <meta name="twitter:url" content="https://prashantsingh.vercel.app" />
+    <meta name="twitter:image" content="/meta/front.png" />
+
+    <title>Prashant Singh</title>
+
+    <!-------------------- Favicon -------------------->
+    <link
+      rel="shortcut icon"
+      href="/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/favicons/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="/favicons/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <!----------------- Phospher Icons ---------------->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
+
+    <script type="module" src="/src/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-------------------------- Header -------------------------->
+      <header
+        class="flex justify-space-between align-center header navigation-header"
+      >
+        <a href="/" class="logo" title="logo">
+          <picture>
+            <source srcset="/favicons/logo.png" type="image/png" />
+            <source srcset="/favicons/logo.png" type="image/png" />
+            <img
+              src="/favicons/logo.png"
+              alt="Logo"
+              loading="eager"
+              width="48"
+              height="48"
+            />
+          </picture>
+        </a>
+
+        <div
+          class="flex flex-col align-center justify-center gap-y-8 navigation-container"
+        >
+          <nav class="navigation">
+            <ul class="flex flex-col align-center gap-3 navigation-menu">
+              <li><a href="#home" class="navigation-link">Home</a></li>
+              <li><a href="#about" class="navigation-link">About</a></li>
+              <li><a href="#projects" class="navigation-link">Projects</a></li>
+              <li><a href="#contact" class="navigation-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="resume-link-wrapper">
+            <a href="/resume.pdf" class="btn btn-primary">Resume</a>
+          </div>
+        </div>
+
+        <div class="hamburger-btn-wrapper">
+          <button
+            aria-label="toggle navigation"
+            class="flex flex-col align-flex-end gap-y-1 hamburger-btn"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!----------------------- Main Container  --------------------->
+      <main class="container">
+        <!-------------- Home Section --------------->
+        <section
+          class="flex flex-col align-flex-start justify-center section-wrapper home-wrapper"
+          id="home"
+        >
+          <div class="intro">
+            <p>Namaste, I am</p>
+            <h1 class="flex flex-col">
+              <span>Prashant Singh.</span>
+              <span>I build Websites.</span>
+            </h1>
+          </div>
+
+          <div class="details">
+            <p>
+              I'm an enthusiastic Web Developer who specializes in creating
+              unique & appealing websites as well as web applications using the
+              latest technologies. Currently, my focus is on building full-stack
+              applications using <strong>Node.js</strong> ,
+              <strong>React.js</strong> & <strong>Next.js</strong>.
+            </p>
+            <a href="#projects" class="btn btn-primary">
+              Check out my projects!
+            </a>
+          </div>
+        </section>
+
+        <!-------------- About Section ------------->
+        <section class="section-wrapper about-wrapper" id="about">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>About Me</span>
+            <span></span>
+          </h2>
+
+          <div
+            class="flex flex-col align-center gap-y-10 about-content-container"
+          >
+            <div class="flex flex-col gap-2 about">
+              <p>
+                Namaste! I'm Prashant, a passiondate Web developer who specializes
+                in creating attractive websites as well as web applications
+                using latest technologies. In 2021, amidst the COVID-19
+                lockdown, I found myself at home with some extra time on my
+                hands. It was during this period that I embarked on an exciting
+                journey into web development.
+              </p>
+              <p>
+                Since then, I've built numerous projects which you can explore
+                in the Projects section. Additionally, you can find more details
+                on my
+                <a href="https://github.com/prashant292" target="_blank">
+                  GitHub
+                </a>
+                account.
+              </p>
+              <p>
+                I am currently seeking job opportunities where I can contribute,
+                learn, and grow. If you have a suitable opportunity that aligns
+                with my skills and experience, feel free to reach out to me.
+              </p>
+              <p>
+                Here are a few technologies I have been working with recently:
+              </p>
+
+              <div class="flex gap-8 skills-container">
+                <ul>
+                  <li><code>CSS (Tailwind CSS)</code></li>
+                  <li><code>JavaScript (ES6+)</code></li>
+                  <li><code>React.js</code></li>
+                  <li><code>Next.js</code></li>
+                </ul>
+
+                <ul>
+                  <li><code>Node.js</code></li>
+                  <li><code>Express.js</code></li>
+                  <li><code>MongoDB</code></li>
+                  <li><code>TypeScript</code></li>
+                </ul>
+
+                <ul>
+                  <li><code>GSAP</code></li>
+                  <li><code>Shrey.js</code></li>
+                  <li><code>Java</code></li>
+                  <li><code>Python</code></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="avatar-wrapper">
+              <picture>
+                <source srcset="/avatar/avatar1.jpg" type="image/jpg" />
+                <source srcset="/avatar/avatar1.jpg" type="image/jpg" />
+                <img
+                  src="/avatar/avatar1.jpg"
+                  alt="Avatar"
+                  loading="lazy"
+                  decoding="async"
+                  width="300"
+                  height="300"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---------- Projects Section -------------->
+        <section class="section-wrapper projects-wrapper" id="projects">
+          <h2 class="flex align-center justify-center gap-1 section-heading">
+            <span></span>
+            <span>My Works</span>
+            <span></span>
+          </h2>
+
+          <div class="flex flex-wrap flex-col align-center gap-8 projects">
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/gamestash.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/gamestash.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/projects-images/gamestash.png"
+                    alt="Game Recommended web app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://game-stack-prashant-jtop.vercel.app//"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GameStash</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    Discover a world of movies and TV shows with our movie app
+                    powered by the TMDB API. Explore popular and top-rated
+                    movies and TV shows, search for your favorites, and delve
+                    into detailed information and reviews. Enjoy endless
+                    entertainment at your fingertips.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>SCSS</code>
+                  <code>React</code>
+                  <code>React Router</code>
+                  <code>TMDB API</code>
+                  <code>Vercel</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://game-stack-prashant-jtop.vercel.app/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rahulbaran/movieplex"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/cara secret.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/cara secret.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/projects-images/cara secret.png"
+                    alt="school site"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://calm-figolla-fcad3d.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Female-Appraisel Sites</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    The School Site project is a SPA for a fictional school
+                    called <strong>Prayaas India</strong>. The website aims to
+                    provide information about the school's programs, facilities,
+                    and events to prospective students and their families.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>SCSS</code>
+                  <code>React</code>
+                  <code>React Router</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://calm-figolla-fcad3d.netlify.app/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rahulbaran/school-site"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/organic clone.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/organic clone.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/projects-images/organic clone.png"
+                    alt="class tests management app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://github.com/Rahulbaran/pakjms-tests-management"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Web App</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    A single page react app which can be used to manage results
+                    of tests of different classes. I have created this app for a
+                    school where I am doing part time as a teacher.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>SCSS</code>
+                  <code>React</code>
+                  <code>MongoDB</code>
+                  <code>Netlify Functions</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Rahulbaran/pakjms-tests-management"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/miney.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/miney.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/projects-images/miney.png"
+                    alt="my portfolio"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://github.com/Rahulbaran/my-portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Miney Web App</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    My own portfolio is also a part of the projects I have
+                    built. The website features an attractive and user-friendly
+                    design, highlighting my accomplishments, qualifications, and
+                    areas of specialization.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>HTML</code>
+                  <code>CSS</code>
+                  <code>JavaScript</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://prashantsingh.vercel.app/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rahulbaran/my-portfolio"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/portfolio.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/portfolio.png"
+                    type="image/pmg"
+                  />
+                  <img
+                    src="/projects-images/portfolio.png"
+                    alt="social media app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="http://sakha.pythonanywhere.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Portfolio</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    A basic social media app that allows users to connect with
+                    friends and share content. Users can create and share posts,
+                    photos, and videos. They can also follow other users, like
+                    posts, and comment on posts.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>SCSS</code>
+                  <code>JavaScript</code>
+                  <code>Flask</code>
+                  <code>MySQL</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="http://sakha.pythonanywhere.com/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rahulbaran/Sakha"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img">
+                <picture>
+                  <source
+                    srcset="/projects-images/sidecup.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="/projects-images/sidecup.png"
+                    type="image/png"
+                  />
+                  <img
+                    src="/projects-images/sidecup.png"
+                    alt="Todo app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <a
+                    href="https://sparsadvancetodo.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >SideCup Clone Web App</a
+                  >
+                </h3>
+                <div class="project-info">
+                  <p>
+                    Advance-Todo is a to-do app that allows users to create,
+                    read, update, and delete tasks. The app is easy to use and
+                    can be accessed from any device.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-x-3 project-tools">
+                  <code>SCSS</code>
+                  <code>JavaScript</code>
+                  <code>MongoDB</code>
+                  <code>Netlify Functions</code>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://sparsadvancetodo.netlify.app/"
+                    target="_blank"
+                    title="live"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-arrow-square-out"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rahulbaran/advance-todo"
+                    target="_blank"
+                    title="source code"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="ph ph-github-logo"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center projects-btn-container">
+            <a
+              href="https://github.com/prashant292"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              >Know More</a>
+          </div>
+        </section>
+      </main>
+
+      <!-------------------------- Footer ----------------------->
+      <footer class="flex flex-col align-center footer" id="contact">
+        <section class="contact-section">
+          <h2>Get In Touch</h2>
+
+          <div
+            class="contact flex flex-col align-center justify-center gap-y-6"
+          >
+            <p>
+              I am currently searching for new opportunities as a
+              <strong>Frontend Developer</strong>. Please feel free to contact
+              me anytime, and I will get back to you as soon as possible.
+            </p>
+
+            <a href="mailto:prashantpratap396@gmail.com" class="btn btn-primary"
+              >Say Hello!</a
+            >
+          </div>
+        </section>
+
+        <div class="flex flex-col gap-y-3">
+          <div class="flex justify-center gap-x-4 social-wrapper">
+            <a
+              href="https://github.com/prashant292"
+              class="social-link"
+              title="Github"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a
+            href="https://www.linkedin.com/in/prashant-cse"
+            class="social-link"
+            title="Linkedin"
+            rel="noopener noreferrer"
+          >
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
+            <a
+              href="https://instagram.com/prashant_thakur10"
+              class="social-link"
+              title="Instagram"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-instagram-logo"></i>
+            </a>
+            <a
+              href="https://codepen.io/rahulbaran"
+              class="social-link"
+              title="Codepen"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-codepen-logo"></i>
+            </a>
+          </div>
+
+          <div>
+            <p>
+              Created by
+              <a href="https://linkedin.com/in/prashant-cse" target="_blank"
+                >Prashant</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
